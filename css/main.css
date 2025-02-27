@@ -196,29 +196,17 @@
 #tekstsnizu {
     margin-left: -350px;
     margin-top: -70px;
-}@keyframes rotate360 {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
 
-/* Фиксируем позицию родителя */
 .mol-wrapper {
     position: absolute;
     transform: translate(350px, -70px);
+    z-index: 2;
 }
 
 .mol3-wrapper {
     position: absolute;
     transform: translateX(-400px);
-}
-
-/* Внутренний элемент крутится */
-#mol, #mol3 {
-    animation: rotate360 10s linear infinite;
 }
 #mol2 {
     width: 400px;
@@ -231,3 +219,9 @@
     margin-left: 1700px;
     font-size: 33px
 }
+#mol2, #mol, #mol3 {
+    position: absolute;
+    will-change: transform; /* Для оптимизации анимации */
+    z-index: 2;
+}
+#mol2 { z-index: 3; } 
