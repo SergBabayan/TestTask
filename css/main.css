@@ -1,0 +1,233 @@
+/* Основные стили для контейнера слайда */
+.DIV1 {
+    width: 2048px;
+    height: 1536px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовка */
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Dis {
+    width: 2048px;
+    display: block;
+}
+
+/* Стили для основного контента */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-40px);
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+}
+
+#nadpis {
+    width: 757px;
+    margin-right: 20px;
+}
+
+.text-right {
+    color: #0036A0;
+    font-size: 54px;
+    line-height: 72px;
+    margin-top: 25px;
+}
+
+.text-below {
+    font-size: 54px;
+    margin-top: 25px;
+    color: #0036A0;
+    transform: translateY(-60px);
+}
+
+/* Стили для контейнера с картинками */
+.image-container {
+    position: relative;
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+/* Фоновая картинка */
+#bancabackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-38%, -30%);
+    z-index: 1;
+    width: 1339px;
+    height: 866px;
+    object-fit: cover;
+}
+
+/* Картинка поверх фона */
+#banca {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 2;
+    width: 741px;
+    height: 733px;
+}
+
+/* Стили для контейнера кнопок */
+.button-container {
+    margin-top: 500px;
+    position: relative;
+    width: 1700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+}
+
+/* Основная кнопка (контейнер для других кнопок) */
+#button1 {
+    width: 1700px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -600px;
+}
+
+/* Стили для текста на основной кнопке */
+#button1 .btn-text {
+    position: absolute;
+    color: #0036A0;
+    font-family: Arial, sans-serif;
+    font-size: 42px;
+    text-align: center;
+    line-height: 1.2;
+    width: 80%;
+    white-space: inherit;
+    pointer-events: none;
+    top: 20%; /* Позиционирование текста */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial;
+    color:#ffffff;
+}
+
+/* Стили для внутренних кнопок */
+.inner-buttons {
+    position: absolute;
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+    bottom: 20px; /* Расположение внизу основной кнопки */
+    left: 50%;
+    transform: translateX(-73%);
+}
+
+/* Стили для каждой внутренней кнопки */
+.inner-button {
+    width: 535px;
+    height: 198px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для текста на внутренних кнопках */
+.inner-button .btn-text {
+    position: absolute;
+    color: #0036A0;
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    line-height: 1;
+    width: 80%;
+    white-space: normal;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Стили для текста на третьей кнопке (многострочный текст) */
+#button3 .btn-text {
+    font-size: 44px;
+    line-height: 1;
+    font-family: Arial;
+    color:#ffffff;
+}
+.btn-text1 {
+    font-size: 40px;
+    position: absolute;
+    margin-left: 1230px;
+    text-align: center;
+    font-family: Arial;
+    color:#ffffff;
+    line-height: 1;
+    margin-top: 20px;
+}
+#btn2 {
+    font-family: Arial;
+    color:#ffffff;
+}
+#button2 {
+    transform: translateX(-35px);
+}
+#menuimage {
+    margin-left: -1550px;
+    margin-top: 50px;
+}
+#tekstsnizu {
+    margin-left: -350px;
+    margin-top: -70px;
+}@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Фиксируем позицию родителя */
+.mol-wrapper {
+    position: absolute;
+    transform: translate(350px, -70px);
+}
+
+.mol3-wrapper {
+    position: absolute;
+    transform: translateX(-400px);
+}
+
+/* Внутренний элемент крутится */
+#mol, #mol3 {
+    animation: rotate360 10s linear infinite;
+}
+#mol2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    transform: translate(530px, 350px);
+    z-index: 2;
+}
+#secondpage {
+    margin-left: 1700px;
+    font-size: 33px
+}
